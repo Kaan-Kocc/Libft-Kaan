@@ -18,7 +18,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-ahmet 20,mehmet 10,zeynep 40,eren 30
-mehmet 10, ahmet 20,eren 30,zeynep 40
-*/
