@@ -1,3 +1,4 @@
+*This project has been created as part of the 42 curriculum by kkoc*
 # Libft
 
 ## Description
@@ -142,7 +143,7 @@ and `ar` is used to create the static library.
 
 ---
 
-## Usage
+## Instructions
 
 To use Libft in another C project, include the header:
 
@@ -172,3 +173,4 @@ man malloc
 man free
 ```
 and many more.
+I used AI tools as an additional resource during development, mainly to understand certain concepts, identify and correct mistakes in my code, and improve my understanding of C and Libft functions. The code was reviewed and tested by me to make sure I understood how it worked and that it followed the requirements of the Libft project.
