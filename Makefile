@@ -1,4 +1,7 @@
-
+NAME = libft.a
+OBJS = $(SRCS:.c=.o)
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 SRCS = ft_memset.c \
 	ft_bzero.c \
 	ft_memcpy.c \
@@ -42,21 +45,10 @@ SRCS = ft_memset.c \
 	ft_lstclear.c \
 	ft_lstiter.c \
 	ft_lstmap.c
-	   
-NAME = libft.a
-
-
-OBJS = $(SRCS:.c=.o)
-
-CC = cc
-
-CFLAGS = -Wall -Wextra -Werror
-
 
 $(NAME): $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
-	@echo "Libft Done !"
-
+	ar rcs $(NAME) $(OBJS)
+	
 all: $(NAME)
 
 clean:
@@ -66,3 +58,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
